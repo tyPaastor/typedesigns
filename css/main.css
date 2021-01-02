@@ -1,5 +1,16 @@
+@font-face {
+    font-family: HelveticaNeueStd;
+    src: url(/assets/fonts/HelveticaNeueStd.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeueThin;
+    src: url(/assets/fonts/HelveticaNeueThin.otf);
+}
+
 html, body {
     background-color: #000000;
+    font-family: HelveticaNeueStd;
 }
 
 /* Bootstrap Overides */
@@ -14,9 +25,24 @@ html, body {
     border: none!important;
 }
 
+/* This makes the navigation items align to the right */
 ul {
     margin-left: auto;
 }
+
+.main-header {
+   font-size: 5rem; 
+   color: #ffffff;
+   font-weight: 100;
+   font-family: HelveticaNeueThin;
+}
+
+
+
+.navbar-brand {
+    width: 12%;
+}
+
 
 /* Cool little tool that shows the viewport size in the top left of the screen
    thank you Joel Gee! */
@@ -29,4 +55,32 @@ ul {
     color: red;
     padding: 2px 5px 2px 5px;
     z-index: 9999;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .center {
+        margin-top: 100px;
+    }
+
+    .navbar-brand {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .center {
+        margin-top: 180px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .center {
+        margin-top: 300px;
+    }
 }
