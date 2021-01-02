@@ -1,0 +1,32 @@
+html, body {
+    background-color: #000000;
+}
+
+/* Bootstrap Overides */
+
+/* This makes the navigation pure black */
+.bg-dark {
+    background-color: #000000!important
+}
+
+.navbar-dark .navbar-toggler {
+    color: #ffffff!important;
+    border: none!important;
+}
+
+ul {
+    margin-left: auto;
+}
+
+/* Cool little tool that shows the viewport size in the top left of the screen
+   thank you Joel Gee! */
+.size-indicator {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: block;
+    background-color: rgba(0,0,0,0.7);
+    color: red;
+    padding: 2px 5px 2px 5px;
+    z-index: 9999;
+}
