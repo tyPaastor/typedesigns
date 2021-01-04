@@ -115,6 +115,53 @@ ul {
     padding: 0;
 }
 
+.project-center {
+    margin-top: 50px;
+}
+
+.project-text {
+    color: #ffffff;;
+    font-family: HelveticaNeueThin;
+    padding: 0!important;
+    margin-bottom: 20px;
+}
+
+.project-text-2 h1 {
+    float: right;
+    text-align: right;
+}
+
+.project-types {
+    font-size: .6em; 
+}
+
+.project-hr {
+    margin-bottom: 0;
+}
+
+.footer {
+    position: fixed;
+    color: #ffffff;
+    bottom: 0;
+    text-align: center!important;
+    width: 100%;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+ 
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+  }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
