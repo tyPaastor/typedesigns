@@ -1,0 +1,22 @@
+﻿<div class="thumbnail-section">
+    <a href="@Link">
+        <img class="img-fluid" src="@Image"/>
+        <div class="title">@Title</div>
+        <div class="tags">@Tags</div>
+    </a>
+</div>
+
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public string Tags { get; set; }
+
+    [Parameter]
+    public string Link { get; set; }
+
+    [Parameter]
+    public string Image { get; set; }
+}

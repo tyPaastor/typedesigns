@@ -1,0 +1,19 @@
+﻿@inherits LayoutComponentBase
+
+<p class="size-indicator xs d-block d-sm-none">XS</p>
+<p class="size-indicator sm d-none d-sm-block d-md-none">SM</p>
+<p class="size-indicator md d-none d-md-block d-lg-none">MD</p>
+<p class="size-indicator lg d-none d-lg-block d-xl-none">LG</p>
+<p class="size-indicator d-none d-xl-block">XL</p>
+
+<div class="page">
+    <NavMenu />
+
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+
+    <FooterNav />
+</div>

@@ -1,0 +1,6 @@
+Rending layer order
+
+	1. index.html
+		2. app.razor
+			3. MainLayout.razor
+				4. /index.razor (or whatever the URL is pointing to)

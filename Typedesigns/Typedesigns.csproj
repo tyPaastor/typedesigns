@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\images\projects\mayhem-skateboards\**" />
+    <Content Remove="wwwroot\images\projects\mayhem-skateboards\**" />
+    <EmbeddedResource Remove="wwwroot\images\projects\mayhem-skateboards\**" />
+    <None Remove="wwwroot\images\projects\mayhem-skateboards\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-rc.2.21480.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-rc.2.21480.10" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\projects\35mm\" />
+    <Folder Include="wwwroot\images\projects\ashwood-developments\" />
+  </ItemGroup>
+
+</Project>
