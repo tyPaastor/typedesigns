@@ -52,9 +52,10 @@ body {
 }
 
 .footer-1 {
-    color: #fff!important;
+    color: #fff !important;
     font-weight: 200;
     padding-top: 50px;
+    bottom: 0;
 }
 
 .navbar-toggler {
@@ -96,10 +97,19 @@ body {
     color: #fff;
 }
 
-.about-page h1 {
-    font-weight: 400;
+.about-page {
+    margin-top: 100px;
+    margin-bottom: 18.8vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-page {
+        margin-top: 30px;
+        margin-bottom: 8.5vh;
+    }
 }
 
 .about-page h3 {
     font-weight: 200;
+    margin-bottom: 20px;
 }
