@@ -10,10 +10,19 @@
     z-index: 9999;
 }
 
+
 body {
     background-color: #000;
-    font-family: 'Archivo', sans-serif;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-style: normal;
     color: #fff !important;
+}
+
+h5 {
+    font-weight: 200;
+    letter-spacing: 1.2px;
 }
 
 /* Navbar CSS */
@@ -23,15 +32,18 @@ body {
     background-color: #000!important;
 }
 
+.navbar {
+    padding-top: 1.5rem;
+}
+
 .navbar-brand {
-    width: 120px;
-    padding-top: .5rem;
+    width: 200px;
 }
 
 /* CSS For the thumbnail sections */
 .thumbnail-section
 .title {
-    padding: 1rem 1rem 0rem 0rem;
+    padding: 1rem 1rem 2rem 0rem;
     font-size: 1.5rem;
 }
 
@@ -119,4 +131,178 @@ body {
 
 .contact-info {
     text-align: right;
+}
+
+.btn {
+    background-color: #fff;
+    font-weight: 600;
+    color: #000;
+    border-color: transparent;
+    border-radius: .4rem;
+}
+
+.btn:hover {
+   color: #fff;
+   background-color: transparent;
+   border-color: #fff;
+   border-width: 1.5px;
+}
+
+.btn:focus, .btn:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+
+.nav-item {
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.footer-link:hover {
+        color: rgba(255,255,255,.55);
+    }
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+.header-text-bold {
+    font-weight: 400;
+}
+
+.service-intro-text {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+ .service-intro-text h1 {
+        padding-bottom: 20px;
+        padding-top: 100px;
+        font-size: 5rem;
+        font-weight: 200;
+    }
+
+.service-intro-image {
+    padding: 100px 10px 10px 100px;
+}
+
+.dropdown-menu {
+    background-color: #000;
+}
+
+a.dropdown-item {
+    color: #fff;
+}
+
+a.dropdown-item:hover {
+    background-color: transparent;
+    color: rgba(255,255,255,.55);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.homepage-button, .homepage-button a {
+    color: #fff;
+    background-color: transparent;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding: 0;
+    border: 0;
+    text-decoration: underline;
+}
+
+    .homepage-button:hover {
+        border: none;
+        color: rgba(255,255,255,.55);
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+.homepage-image {
+    padding: 100px 0px 100px 100px;
+}
+
+.homepage-align {
+    align-items:center;
+}
+
+.homepage-align h1 {
+    padding-bottom: 50px;
+}
+
+.service-main-text h4 {
+    padding-right: 100px;}
+
+.service-info h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.service-header {
+    font-size: 70px;
+    padding: 50px 0px 50px 0px;
+}
+
+.service-header h3 {
+    font-weight: 300;
+}
+
+.quote-banner {
+    padding: 150px 0px 150px 00px;
+}
+
+.quote-banner h2 {
+    padding-bottom: 15px;        
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .homepage-image {
+        display: none;
+    }
+
+    .homepage-align {
+        padding: 100px 0px 100px 0px;
+    }
+
+    .navbar-nav, .dropdown-menu, .dropdown-item {
+        text-align: right;
+        padding-right: 0;
+    }
+
+    .quote-button {
+        margin-top: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    ...
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    ...
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    ...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    ...
 }
