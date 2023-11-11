@@ -1,17 +1,12 @@
 ﻿<div class="thumbnail-section">
-    <a href="@Link">
-        <img class="img-fluid" src="@Image"/>
+        <img class="img-fluid" src="@Image" />
         <div class="title">@Title</div>
-    </a>
 </div>
 
 
 @code {
     [Parameter]
     public string Title { get; set; }
-
-    [Parameter]
-    public string Link { get; set; }
 
     [Parameter]
     public string Image { get; set; }

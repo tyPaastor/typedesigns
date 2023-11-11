@@ -1,28 +1,39 @@
 ﻿@page "/"
 
-<PageTitle>typedesigns</PageTitle>
+<PageTitle>typedesigns | Design, Print, Signage</PageTitle>
 
-<div class="row">
-    <div class="col-xl-3 col-lg-3 col-sm-6 col-xs-12">
-        <ProjectPreview Title="3D" Tags="2021, 2022, 3D Design" Link="/project/3d" Image="/images/thumbnails/3d-thumbnail.png"/>
-        <ProjectPreview Title="Brewlab" Tags="2019, Web Design & Development" Link="/project/brewlab" Image="/images/thumbnails/brewlab-thumbnail.jpg"/>
-        <ProjectPreview Title="Redlight Market" Tags="2020, Branding, Print" Link="/project/RedLightMarket" Image="/images/thumbnails/redlight-thumbnail.jpg"/>
+<div class="container">
+    <div class="row homepage-align">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12">
+                <h1>
+                    We create <span class="header-text-bold">meaningful</span>
+                    <br>
+                    and <span class="header-text-bold">purposeful</span> brands
+                </h1>
+            <button type="button" class="btn homepage-button" onclick="window.location.href='#services'">Learn More</button>
+         </div>
+
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12">
+            <div>
+               <img class="img-fluid homepage-image" src="/images/placeholder.jpg"/>
+            </div>
+        </div>
     </div>
 
-    <div class="col-xl-3 col-lg-3 col-sm-6 col-xs-12">
-        <ProjectPreview Title="Gallaghers Brewery" Tags="2021, Branding, Packaging" Link="/project/gallaghers-brewery" Image="/images/thumbnails/gallaghers-thumbnail.jpg"/>
-        <ProjectPreview Title="Ausway" Tags="2019, Branding & Identity, Web Design, Packaging, Vehicle Livery" Link="/project/ausway" Image="/images/thumbnails/ausway-thumbnail.jpg"/>       
-        <ProjectPreview Title="Underground Altar" Tags="2020, Branding, Print" Link="/project/undergroundaltar" Image="/images/thumbnails/undergroundaltar-thumbnail.jpg"/>
-     </div>
+    <div class="row" id="services">
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12">
+            <ProjectPreview Title="Branding & Design" Link="/services/branding-design" Image="/images/thumbnails/branding-design-thumbnail.jpg"/>
+            <ProjectPreview Title="Custom/Specialty Print" Link="/services/custom-specialty-print" Image="/images/thumbnails/custom-print-thumbnail.jpg" />
+        </div>
 
-    <div class="col-xl-3 col-lg-3 col-sm-6 col-xs-12">
-        <ProjectPreview Title="35mm Film Photography" Tags="2020, 2021, 2022, Photography" Link="/project/35mmfilm" Image="/images/thumbnails/35mm-thumbnail.jpg"/>
-        <ProjectPreview Title="Artem Wines" Tags="2018, Label Design & Packaging" Link="/project/artemwines" Image="/images/thumbnails/artem-thumbnail.jpg"/>       
-     </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12">
+            <ProjectPreview Title="Brand Collateral" Link="/services/brand-collateral" Image="/images/thumbnails/brand-collateral-thumbnail.jpg" />
+            <ProjectPreview Title="Web Development" Link="/services/web-development" Image="/images/thumbnails/web-dev-thumbnail.jpg" />
+        </div>
 
-    <div class="col-xl-3 col-lg-3 col-sm-6 col-xs-12">
-        <ProjectPreview Title="Bank of Taswegia" Tags="2018, Copywriting, Advertising" Link="/project/bankoftaswegia" Image="/images/thumbnails/taswegia-thumbnail.jpg"/>
-        <ProjectPreview Title="Space Co-Working" Tags="2021, Branding & Identity, Advertising, Signage" Link="/project/spacecoworking" Image="/images/thumbnails/space-thumbnail.jpg"/>
-        <ProjectPreview Title="Ashwood Developments" Tags="2022, Web Design" Link="/project/ashwooddevelopments" Image="/images/thumbnails/ashwood-thumbnail.jpg"/>       
-     </div>
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12">
+            <ProjectPreview Title="Signage" Link="/services/signage" Image="/images/thumbnails/signage-thumbnail.jpg" />
+            <ProjectPreview Title="Clothing" Link="/services/clothing" Image="/images/thumbnails/clothing-thumbnail.jpg" />
+        </div>
+    </div>
 </div>

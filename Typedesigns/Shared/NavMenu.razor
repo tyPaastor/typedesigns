@@ -1,16 +1,42 @@
-﻿<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">
+﻿<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container">
+		<!-- Typedesigns Logo -->
+ 	        <a class="navbar-brand" href="/">
                 <img src="/images/typedesigns-white.svg"/>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/">Work</a>
-                    <a class="nav-link" href="/info">Info</a>
-                </div>
-            </div>
-        </nav>
-</div>
+		<!-- Toggler -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+	
+
+	<ul class="navbar-nav">
+		<!-- Our Work Button -->
+		<li class="nav-item active"> <a class="nav-link" href="/our-work">Our Work</a> </li>
+		<!-- Servcices Dropdown -->
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+		    <ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="/services/branding-design">Branding & Design</a></li>
+			  <li><a class="dropdown-item" href="/services/brand-collateral">Brand Collateral</a></li>
+			  <li><a class="dropdown-item" href="/services/signage">Signage</a></li>
+			  <li><a class="dropdown-item" href="/services/custom-print">Custom/Specialty Print</a></li>
+			  <li><a class="dropdown-item" href="/services/web-development">Web Development</a></li>
+			  <li><a class="dropdown-item" href="/services/clothing">Clothing</a></li>
+		    </ul>
+		</li>
+		<!-- Info Button -->
+        <li class="nav-item"><a class="nav-link" href="/info">Info</a></li>
+		<!-- Contact Button -->
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+		<!-- Quote Button -->
+        <form class="form-inline nav-item">
+			<button class="btn quote-button" onclick="window.location.href='https://iss672gwqqb.typeform.com/to/xaVLkNEU'" type="button">Grab a Quote</button>
+        </form>
+	</ul>
+
+  </div> <!-- navbar-collapse.// -->
+ </div> <!-- container-fluid.// -->
+</nav>
