@@ -10,19 +10,38 @@
     z-index: 9999;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #000;
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-style: normal;
     color: #fff !important;
 }
 
-h5 {
-    font-weight: 200;
+#test {
+  scroll-margin-top: -500px; /* adjusts where it scrolls to */
+  padding-top: 50px; /* optional: spacing for visual clarity */
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h3 {
+    font-weight: 400!important;
     letter-spacing: 1.2px;
+    padding-top: 10px;
 }
 
 /* Navbar CSS */
@@ -32,19 +51,37 @@ h5 {
     background-color: #000!important;
 }
 
+/* Space between the top of the screen and the start of the navbar */
 .navbar {
     padding-top: 1.5rem;
 }
 
+/* Navbar logo size */
 .navbar-brand {
     width: 200px;
 }
 
+/* Navbar "Information" size */
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.85rem;
+    }
+}
+
+
 /* CSS For the thumbnail sections */
 .thumbnail-section
 .title {
-    padding: 1rem 1rem 2rem 0rem;
-    font-size: 1.5rem;
+    padding: 1rem 0rem 0rem 0rem;
+    font-size: 1.25rem;
 }
 
 .thumbnail-section a {
@@ -53,9 +90,11 @@ h5 {
 }
 
 .tags {
-    font-weight: 100;
-    text-decoration: underline;
-    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0rem 0rem 2rem 0rem;
+    font-style: italic;
 }
 
 .project-section {
@@ -133,6 +172,10 @@ h5 {
     text-align: right;
 }
 
+.contacts a {
+    color: #fff;
+}
+
 .btn {
     background-color: #fff;
     font-weight: 600;
@@ -167,11 +210,6 @@ h5 {
 .footer-link:hover {
         color: rgba(255,255,255,.55);
     }
-
-h1 {
-    font-size: 3.5rem;
-    font-weight: 200;
-}
 
 .header-text-bold {
     font-weight: 400;
@@ -231,14 +269,6 @@ a.dropdown-item:hover {
     padding: 100px 0px 100px 100px;
 }
 
-.homepage-align {
-    align-items:center;
-}
-
-.homepage-align h1 {
-    padding-bottom: 50px;
-}
-
 .service-main-text h4 {
     padding-right: 100px;}
 
@@ -264,65 +294,104 @@ a.dropdown-item:hover {
     padding-bottom: 15px;        
 }
 
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .homepage-image {
-        display: none;
-    }
-
-    .homepage-align {
-        padding: 100px 0px 100px 0px;
-    }
-
-    .navbar-nav, .dropdown-menu, .dropdown-item {
-        text-align: right;
-        padding-right: 0;
-    }
-
-    .quote-button {
-        margin-top: 10px;
-    }
+.button-container {
+    display: flex;
+    gap: 50px; /* Space between buttons */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    ...
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    background-color: #000; /* Adjust button background */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    ...
+/* Icon styling inside button */
+.button-link img.icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 8px; /* Space between text and icon */
+    transition: transform 0.3s ease;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    ...
+/* Hover effect */
+.button-link:hover {
+    color: #C9C8C5;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    ...
+.button-link:hover img.icon {
+    transform: translateX(5px); /* Move icon slightly to the right on hover */
 }
 
-.maintenance-row {
-    height: 100vh;
+.hero-image img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
 }
 
-.maintenance-section {
-    height: 100%;
+.hero-section {
+    height: 90vh; /* 100% of the viewport height */
+    align-items: stretch;
+}
+
+.row.h-100 {
+    height: 90vh!important;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.text-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end; /* Push content to the bottom */
+    flex-grow: 1;
+    padding-bottom: 10vh;
 }
 
-    .maintenance-section a {
-        color: #ffffff;
+.project-layout {
+    padding-top: 50px;
+}
+
+    .project-layout h2, h3 {
+        font-size: 1rem;
     }
 
-    .maintenance-section h1 {
-        line-height: 50px;
+
+@media (max-width: 991.98px) {
+    .button-container {
+        flex-direction: column;
     }
+
+    .button-link {
+        margin-bottom: 10px;
+    }
+
+    .project-image img {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section {
+        height: auto;
+    }
+
+    .hero-image img {
+        object-fit: contain;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 0px; /* Space between buttons */
+        text-align: left;
+
+    }
+}
