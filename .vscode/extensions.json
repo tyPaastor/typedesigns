@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-vscode.vscode-typescript-next",
+        "unifiedjs.vscode-mdx",
+        "bradlc.vscode-tailwindcss",
+    ]
+}

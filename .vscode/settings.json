@@ -1,0 +1,4 @@
+// This file contains settings for VS Code / VS Code extensions that apply only to this project.
+{
+    "liveServer.settings.root": "/out/"
+}
