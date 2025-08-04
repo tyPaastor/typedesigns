@@ -8,19 +8,21 @@ type Props = {
 export function MoreStories({ posts }: Props) {
   return (
     <section>
-      <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        Projects
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <div className="mb-20">
+      </div>
+
+      {/* Masonry layout starts here */}
+      <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6 mb-32">
         {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            slug={post.slug}
-            excerpt={post.excerpt}
-          />
+          <div key={post.slug} className="break-inside-avoid">
+            <PostPreview
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              slug={post.slug}
+              excerpt={post.excerpt}
+            />
+          </div>
         ))}
       </div>
     </section>

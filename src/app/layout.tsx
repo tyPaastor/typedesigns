@@ -10,8 +10,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Typedesigns | Design, Print, Signage`,
+  description: `Typedesigns is based in New Norfolk, in the Derwent Valey of Tasmania. We produce memorable and meaningful work that, in turn, delivers big impacts.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -44,6 +44,8 @@ export default function RootLayout({
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        
+        <link rel="stylesheet" href="https://use.typekit.net/abcd123.css" />
         <link
           rel="mask-icon"
           href="/favicon/safari-pinned-tab.svg"

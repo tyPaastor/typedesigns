@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllProjects, getProjectBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
 import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
-import { PostHeader } from "@/app/_components/post-header";
+import BackButton from "@/app/_components/back-button";
 
-export default async function Post(props: Params) {
+export default async function ProjectPage(props: Params) {
   const params = await props.params;
   const project = getProjectBySlug(params.slug);
 
@@ -21,11 +20,18 @@ export default async function Post(props: Params) {
     <main>
       <Container>
         <Header />
-        <article className="mb-32">
-          <strong>{project.title}</strong>
-          <br/>
-          <i>{project.excerpt}</i>
+        <article className="mb-32 mt-10">
+
+          <div className="mb-10">
+            <h1 className="text-3xl tracking-tight">{project.title}</h1>
+            <p className="italic text-sm text-neutral-400">{project.excerpt}</p>
+          </div>
+
           <PostBody content={content} />
+          
+          <div className="mb-10"></div>
+          <BackButton />
+    
         </article>
       </Container>
     </main>
@@ -46,7 +52,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     return notFound();
   }
 
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
+  const title = `${post.title} | by Typedesigns`;
 
   return {
     title,
