@@ -17,7 +17,7 @@ export default function Index() {
               </h1>
               <div className="text-sm/6 tracking-tight">
                 <p className="mb-4">
-                    Typedesign is a creative design practice based in New Norfolk in the Derwent Valley of Tasmania, we work with clients across Tasmania, specialising in brand development, print media, signage, and more.
+                    Typedesigns is a creative design practice based in New Norfolk in the Derwent Valley of Tasmania. We work with clients all across Tasmania, specialising in brand development, print media, signage, and more.
                 </p>
                 <p className="mb-4">
                     Our aim is simple: to produce memorable and meaningful work that, in turn, delivers big impacts.

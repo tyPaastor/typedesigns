@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -17,6 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,6 +29,20 @@ export default function RootLayout({
     // suppressHydrationWarning to avoid issues with theming https://stackoverflow.com/a/79150843/8306962
     <html lang="en" suppressHydrationWarning>
       <head>
+         {/* Google Analytics */}
+                <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0X12GXXKJL"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0X12GXXKJL');
+          `}
+        </Script>
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
