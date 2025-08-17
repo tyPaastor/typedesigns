@@ -17,9 +17,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://typedesigns.com.au/",
+    siteName: "Typedesigns",
+    locale: "en_AU",
     title: "Design, Print, Signage in Tasmania | Typedesigns",
     description: "Design, print + signage for Tasmanian businesses. Brand development, logo design, business + commercial signage, vehicle graphics + wraps, web development and so much more. Based in the Derwent Valley, in New Norfolk, working all throughout Hobart and statewide.",
-    images: [{ url: HOME_OG_IMAGE_URL, alt: "Typedesigns work samples" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Typedesigns" }],
   },
 };
 
