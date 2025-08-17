@@ -11,10 +11,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Typedesigns | Design, Print, Signage`,
-  description: `Typedesigns is based in New Norfolk, in the Derwent Valey of Tasmania. We produce memorable and meaningful work that, in turn, delivers big impacts.`,
+  metadataBase: new URL("https://typedesigns.com.au"),
+  title: `Design, Print, Signage in Tasmania | Typedesigns`,
+  description: `Design, print + signage for Tasmanian businesses. Brand development, logo design, business + commercial signage, vehicle graphics + wraps, web development and so much more. Based in the Derwent Valley, in New Norfolk, working all throughout Hobart and statewide.`,
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    type: "website",
+    url: "https://typedesigns.com.au/",
+    title: "Design, Print, Signage in Tasmania | Typedesigns",
+    description: "Design, print + signage for Tasmanian businesses. Brand development, logo design, business + commercial signage, vehicle graphics + wraps, web development and so much more. Based in the Derwent Valley, in New Norfolk, working all throughout Hobart and statewide.",
+    images: [{ url: HOME_OG_IMAGE_URL, alt: "Typedesigns work samples" }],
   },
 };
 
